@@ -11,12 +11,12 @@
 * git clone https://github.com/your-username/calculator-csharp.git
 cd calculator-csharp
 2. Создайте ветку:
-git checkout -b feature/AmazingFeature
+* git checkout -b feature/AmazingFeature
 3. Закоммитьте изменения:
-git add .
-git commit -m "Add some AmazingFeature"
+* git add .
+* git commit -m "Add some AmazingFeature"
 4. Запушьте ветку:
-git push origin feature/AmazingFeature
+* git push origin feature/AmazingFeature
 
 
 📄 Лицензия
@@ -26,7 +26,7 @@ git push origin feature/AmazingFeature
 👨‍💻 Автор
 
 Sofia-claire 
-Gmail: sofiaulivanova@gmail.com
+* Gmail: sofiaulivanova@gmail.com
 ---
 
 >⭐️ Не забудьте поставить звезду репозиторию, если он вам понравился!
