@@ -1,4 +1,5 @@
 ![C#](https://img.shields.io/badge/C%23-Console%20Calculator-hotpink)
+![C#](https://img.shields.io/badge/Made%20with-C%23-ff69b4)
 
 🐛 Известные ограничения
 
