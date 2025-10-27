@@ -8,7 +8,7 @@
 🤝 Вклад в проект
 
 1. Клонируйте и перейдите в папку:
-git clone https://github.com/your-username/calculator-csharp.git
+* git clone https://github.com/your-username/calculator-csharp.git
 cd calculator-csharp
 2. Создайте ветку:
 git checkout -b feature/AmazingFeature
