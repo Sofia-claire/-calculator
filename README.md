@@ -26,7 +26,7 @@ git push origin feature/AmazingFeature
 👨‍💻 Автор
 
 Sofia-claire 
-*Gmail: sofiaulivanova@gmail.com
+Gmail: sofiaulivanova@gmail.com
 ---
 
 >⭐️ Не забудьте поставить звезду репозиторию, если он вам понравился!
