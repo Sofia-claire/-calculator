@@ -1,74 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
-namespace calculator
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        Console.Write("Первое число: ");
+        int a = int.Parse(Console.ReadLine());
+        
+        Console.Write("Второе число: ");
+        int b = int.Parse(Console.ReadLine());
+        
+        int sum = a + b;
+        int minus = a - b;
+        int multiply = a * b;
+        int incrementA = a + 1;
+        int incrementB = b + 1;
+        int decrementA = a - 1;
+        int decrementB = b - 1;
+        
+        int or = a | b;
+        int and = a & b;
+        int xor = a ^ b;
+        int notA = ~a;
+        int notB = ~b;
+        
+        Console.WriteLine("Сложение: " + a + " + " + b + " = " + sum);
+        Console.WriteLine("Вычитание: " + a + " - " + b + " = " + minus);
+        Console.WriteLine("Умножение: " + a + " * " + b + " = " + multiply);
+        
+        if (b != 0)
         {
-            float one, two, result;
-            char sign;
-            Console.WriteLine("Добро пожаловать в калькулятор. Вам нелбходимо ввести первое число, затем знак действия(+,-,*,/), которое хотите совершить и второе число.");
-            Console.Write("Введите первое число: ");
-            one = Convert.ToSingle(Console.ReadLine());
-            Console.Write("Введите знак действия : ");
-            sign = Convert.ToChar(Console.ReadLine());
-            Console.Write("Введите Второе число: ");
-            two = Convert.ToSingle(Console.ReadLine());
-            if (sign == '+')
-            {
-                result = one + two;
-                Console.WriteLine("Сумма ваших чисел равна " + result);
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == '-')
-            {
-                result = one - two;
-                Console.WriteLine("Разность ваших чисел равна " + result);
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == '*')
-            {
-                result = one * two;
-                Console.WriteLine("Произведение ваших чисел равно " + result);
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == '/')
-            {
-                if (two == 0)
-                {
-                    Console.WriteLine("Ошибка. Делитель не может быть равным нулю.");
-                    Console.WriteLine("Для выхода нажмите любую клавишу...");
-                    Console.ReadKey();
-                }
-                else
-                {
-                    result = one / two;
-                    Console.WriteLine("Частное ваших чисел равна " + result);
-                    Console.WriteLine("Для выхода нажмите любую клавишу...");
-                    Console.ReadKey();
-                }
-
-
-            }
-            else
-            {
-                Console.WriteLine("Ошибка. Вы ввели неверный знак.");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-
-
-            }
-
+            int divide = a / b;
+            Console.WriteLine("Деление: " + a + " / " + b + " = " + divide);
         }
-
+        else
+        {
+            Console.WriteLine("Деление: на ноль делить нельзя!");
+        }
+        
+        Console.WriteLine("Инкремент первого числа: " + a + " + 1 = " + incrementA);
+        Console.WriteLine("Инкремент второго числа: " + b + " + 1 = " + incrementB);
+        Console.WriteLine("Декремент первого числа: " + a + " - 1 = " + decrementA);
+        Console.WriteLine("Декремент второго числа: " + b + " - 1 = " + decrementB);
+        
+        Console.WriteLine("Побитовое ИЛИ: " + a + " | " + b + " = " + or);
+        Console.WriteLine("Побитовое И: " + a + " & " + b + " = " + and);
+        Console.WriteLine("Побитовое XOR: " + a + " ^ " + b + " = " + xor);
+        Console.WriteLine("Побитовое НЕ первого числа: ~" + a + " = " + notA);
+        Console.WriteLine("Побитовое НЕ второго числа: ~" + b + " = " + notB);
     }
 }
